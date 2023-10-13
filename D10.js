@@ -165,13 +165,10 @@ console.log(rollTheDice(3));
 function howManyDays(date) {
   const targetDateTime = new Date(date);
 
-  // Ottieni la data corrente
   const currentDate = new Date();
 
-  // Calcola la differenza in millisecondi tra le due date
   const timeDifference = currentDate - targetDateTime;
 
-  // Calcola il numero di giorni trascorsi
   const daysDifference = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
 
   return "i giorni trascorsi dal " + date + " sono " + daysDifference;
