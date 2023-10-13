@@ -323,33 +323,17 @@ function removeIndex(num) {
   Scrivi una funzione per selezionare l'elemento dotato di id "container" all'interno della pagina.
 */
 
-const selectId = function () {
-  const container = document.createElement("div")
-  container.setAttribute("id", "container")
-  document.body.appendChild(container)
-
+function selectId() {
   const idSelected = document.querySelector("#container")
   return idSelected
 }
-console.log(selectId());
 /* ESERCIZIO 21
   Scrivi una funzione per selezionare ogni tag <td> all'interno della pagina.
 */
-const selectTd = function () {
-  const table = `
-  <table id = "myTable">
-    <tr><td>1</td><td>2</td><td>3</td><td>4</td></tr>
-    <tr><td>5</td><td>6</td><td>7</td><td>8</td></tr>
-    <tr><td>9</td><td>10</td><td>11</td><td>12</td></tr>
-    <tr><td>13</td><td>14</td><td>15</td><td>16</td></tr>
-    <tr><td>17</td><td>18</td><td>19</td><td>20</td></tr>
-    <tr><td>21</td><td>22</td><td>23</td><td>24</td></tr>
-  </table>`;
-  document.body.innerHTML += table
-  const allTd = document.querySelectorAll("#myTable td");
+function selectAllTd() {
+  const allTd = document.querySelectorAll("td");
   return allTd;
 }
-console.log(selectTd());
 /* ESERCIZIO 22
   Scrivi una funzione che, tramite un ciclo, stampa in console il testo contenuto in ogni tag <td> all'interno della pagina.
 */
